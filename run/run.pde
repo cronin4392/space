@@ -4,7 +4,7 @@ float initialScale;
 float imageScale;
 
 void setup() {
-  size(1280, 720);
+  size(1280, 750);
   // The image file must be in the data folder of the current sketch 
   // to load successfully
   img = loadImage("n6085_1400.jpg");  // Load the image into the program  
