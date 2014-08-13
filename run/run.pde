@@ -8,8 +8,10 @@ import ddf.minim.effects.*;
 PImage img1;
 PImage img2;
 PImage img3;
+
 Minim minim;
-AudioSample kick1;
+AudioPlayer player;
+boolean is_playing;
 
 float initialScale;
 float baseIncrement;
@@ -21,10 +23,10 @@ void setup() {
   img1 = loadImage("1.jpg");
   img2 = loadImage("2-2.jpg");
   img3 = loadImage("3.jpg");  
+  
   minim = new Minim(this);
-  kick1 = minim.loadSample("strange.mp3", 512);
-
-
+  player = minim.loadFile("strange_cut.mp3");
+  is_playing = false;
   
   initialScale = 0.9;
   baseIncrement = 0.01;
@@ -42,6 +44,11 @@ void draw() {
   background(0);
   
   if (keyPressed == true) {
+    if(is_playing == false) {
+      player.play();
+      is_playing = true;
+    }
+    
     step ++;
     
     // FIRST SHAPE
@@ -77,7 +84,6 @@ void draw() {
     scale(scale2);
     blendMode(SCREEN);
     image(img2, (img2.width/-2), (img2.height/-2));
-       kick1.trigger();
 
     popMatrix();
     // END
@@ -112,6 +118,11 @@ void draw() {
 **/
   }
   else {
+    if(is_playing == true) {
+      player.pause();
+      player.rewind();
+      is_playing = false;
+    }
     step = 0;
     //imageScale = initialScale;
   }
