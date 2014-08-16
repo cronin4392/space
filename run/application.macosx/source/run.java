@@ -42,19 +42,23 @@ boolean is_playing;
 
 float initialScale;
 int step;
-float[] canvasMiddle;
+float[] canvasMiddle, canvasSize;
+//float opacity1, opacity2, opacity3, opacity4;
 
 public void setup() {
   //size(1280, 750);
   size(displayWidth, displayHeight);
   background(0);
+  canvasSize = new float[2];
+  canvasSize[0] = width;
+  canvasSize[1] = height;
   canvasMiddle = new float[2];
   canvasMiddle[0] = width/2;
   canvasMiddle[1] = height/2;
 
   // SOUND
   minim = new Minim(this);
-  player = minim.loadFile("strange_cut.mp3", 1024);
+  player = minim.loadFile("strange_cut2.mp3", 1024);
   is_playing = false;
   //
 
@@ -85,9 +89,9 @@ public void setup() {
 public void draw() {
   background(0);
 
-  if (keyPressed == true) {
+  if (true) {
     if (is_playing == false) {
-      player.play();
+      player.loop();
       is_playing = true;
     }
 
@@ -96,6 +100,14 @@ public void draw() {
     for(int i = 0; i < items.size(); i++) {
       items.get(i).update(step);
     }
+    
+    // Give a flicker effect
+    blendMode(NORMAL);
+    for(int i=0; i<10; i++) {
+      fill(0, random(0,30));
+      ellipse(random(0, canvasSize[0]), random(0, canvasSize[1]), 15, 15);
+    }
+  
   } else {
     if (is_playing == true) {
       player.pause();
