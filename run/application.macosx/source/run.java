@@ -49,6 +49,7 @@ public void setup() {
   //size(1280, 750);
   size(displayWidth, displayHeight);
   background(0);
+  noCursor();
   canvasSize = new float[2];
   canvasSize[0] = width;
   canvasSize[1] = height;
