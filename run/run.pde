@@ -66,7 +66,7 @@ void setup() {
 void draw() {
   background(0);
 
-  if (true) {
+  if (keyPressed == true) {
     if (is_playing == false) {
       player.loop();
       is_playing = true;
