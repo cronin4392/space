@@ -24,25 +24,25 @@
 		<data>
 		9yAhryCrC0UVAs0jLxdifhNloyE=
 		</data>
-		<key>Java/data/1.jpg</key>
+		<key>Java/data/A.jpg</key>
 		<data>
-		nbCARDVfYZAQInzo0LbHgCOOunc=
+		Dkyc74yJjzSyg+v35RkH22Q9AhA=
 		</data>
-		<key>Java/data/2-2.jpg</key>
+		<key>Java/data/B.jpg</key>
 		<data>
-		fluB9Im4sp9zUaacNYHBFL0WchI=
+		23tEWEyR9JU1xXzzrfRMRIKZiLY=
 		</data>
-		<key>Java/data/2.jpg</key>
+		<key>Java/data/C.jpg</key>
 		<data>
-		IC2RDHKNYn7ejq4FPWlCb4rqHng=
+		wKPM4Qn3ll9RQUmmTXoOV+BfL68=
 		</data>
-		<key>Java/data/3.jpg</key>
+		<key>Java/data/D.jpg</key>
 		<data>
-		BrzLQ6ZrYLT0NCH24Z66MD29y0w=
+		C7XoAeIUOeW6+cRpMAjhYKTDIh4=
 		</data>
-		<key>Java/data/sound_of_space.jpg</key>
+		<key>Java/data/E.jpg</key>
 		<data>
-		tpM7v78xTf7ZCuoTwRugGQcATiY=
+		cU5dkpeqiRnE+sXLnsphlA+SkhU=
 		</data>
 		<key>Java/data/strange.mp3</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Java/run.jar</key>
 		<data>
-		xRcy3lQAmZf+CPIMlwJOzaZb7gA=
+		O9vwGfVrzCXzsleA6wdidvFCfJQ=
 		</data>
 		<key>Java/tritonus_aos.jar</key>
 		<data>
@@ -96,15 +96,6 @@
 		<data>
 		5WRtooC+nx4HMBs1M5o3asZA358=
 		</data>
-		<key>PlugIns/jdk1.7.0_55.jdk</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			hD7d92W//OczkhPPJF2IrfBejnk=
-			</data>
-			<key>requirement</key>
-			<string>identifier "com.oracle.java.7u55.jdk" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "8SBRM6J77J"</string>
-		</dict>
 		<key>Resources/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
